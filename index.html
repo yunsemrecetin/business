@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="topnav" id="topnav">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="icon"><a href="#" onclick="myNav()"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+        
+        
+    </nav>
+    <header id="header">
+        <div id="header-text">
+            <h1>Lorem, ipsum.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, praesentium.</p>
+        </div>
+    </header>
+    <main id="main-doc">
+        <section id="about">
+            <h2>About</h2>
+            <hr>
+            <div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga beatae unde, ipsa, sed ex, tempore qui quae reiciendis aperiam error cum. Non odio ducimus recusandae quis excepturi debitis dolores harum neque laboriosam aperiam repudiandae veritatis vitae sit odit quae, nam sed molestias, incidunt obcaecati ipsa!
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga beatae unde, ipsa, sed ex, tempore qui quae reiciendis aperiam error cum. Non odio ducimus recusandae quis excepturi debitis dolores harum neque laboriosam aperiam repudiandae veritatis vitae sit odit quae, nam sed molestias, incidunt obcaecati ipsa!
+                </p>
+            </div>
+            
+        </section>
+        <section id="team">
+            <h2>Team</h2>
+            <hr>
+            <div class="users">
+                <div class="user">
+                    <p>Elon Musk</p>
+                    <img src="elonmusk.jpg" alt="">
+                    <p>IT Director</p>
+                </div>
+                <div class="user">
+                    <p>Steve Jobs</p>
+                    <img src="stevejobs.jpg" alt="">
+                    <p>CEO</p>
+                </div>
+                <div class="user">
+                    <p>Bill Gates</p>
+                    <img src="billgates.jpg" alt="">
+                    <p>Founder</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <hr>
+            <div id="form">
+                <div class="input-group">
+                    <label for="Ad">Ad:</label>
+                    <input type="text" id="Ad" name="ad" placeholder="Adınız: ">
+                </div>
+                <div class="input-group">
+                    <label for="Ad">Soyad:</label>
+                    <input type="text" id="Ad" name="soyad" placeholder="Soyadınız: ">
+                </div>
+                <div class="input-group">
+                    <label for="Mesaj">Mesajınız:</label>
+                    <textarea id="Mesaj" name="msg" placeholder="Mesajınız: " rows="6"></textarea>
+                </div>
+                <div class="input-group">
+                    <button id="submit">Gönder</button>
+                </div>
+            </div>
+            
+            
+        </section>
+    </main>
+    <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis.</p>
+    </footer>
+    <script>
+        var x = document.getElementById("topnav");
+        function myNav() {
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
